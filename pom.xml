@@ -32,7 +32,8 @@
         <!-- SonarQube  -->
         <jacoco.version>0.8.5</jacoco.version>
         <surefire.version>2.22.2</surefire.version>
-
+        <sonar.organization>elenbeilina</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <repositories>
