@@ -1,3 +1,5 @@
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=elenbeilina_rest-sink-kafka-connect-dynamic-propeties)](https://sonarcloud.io/dashboard?id=elenbeilina_rest-sink-kafka-connect-dynamic-propeties)
+
 # Kafka Connect Rest API Sink
 
 A kafka connect sink connector for pulling data from kafka and pushing it to multiple endpoints.
