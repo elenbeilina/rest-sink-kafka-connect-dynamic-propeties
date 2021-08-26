@@ -1,0 +1,24 @@
+{
+  "name": "rest-sink-kafka-connect",
+  "config": {
+    "connector.class": "com.aqualen.kafkaconnect.rest.RestSinkConnector",
+    "tasks.max": "1",
+    "topics": "main",
+    "api.base.uri": "https://",
+
+    "identifier.location": "HEADER",
+    "identification.key": "publisher",
+    "identifier.values": "DC Comics,Marvel Comics",
+
+    "identifier.dc-comics.uri": "221872d9c0e1dac6d2485cd021bb7598.m.pipedream.net",
+    "identifier.dc-comics.http.method": "POST",
+
+    "identifier.marvel-comics.uri": "en50n8wsvkak1uu.m.pipedream.net",
+    "identifier.marvel-comics.http.method": "POST",
+
+    "errors.tolerance":"all",
+    "errors.deadletterqueue.topic.name":"dlq",
+    "errors.deadletterqueue.topic.replication.factor":1,
+    "errors.deadletterqueue.context.headers.enable":true
+  }
+}
